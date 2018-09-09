@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- the MAIN.CSS file is linked here -->
+  </head>
+
+  <body>
+
+    <div class = 'main-body'>
+      <div class = 'cloud-section'>
+        <h1>Guessing Game</h1>
+        <h2>Guess a number between 1-100</h2>
+        <h3 id = 'text-display'>To make the sun come out!</h3>
+        <input id ='input-guess' placeholder='Type Here'>
+        <button id='submit'>Submit</button>
+        <br>
+        <button class = 'bottom-buttons' id = 'reset'>Reset</button>
+        <button class = 'bottom-buttons' id = 'hint'>Hint</button>    
+      </div>
+
+      <div class = 'guess-storage-section'>
+        <ul>
+          <li id = 'guess-1' class = 'storeboxes'></li>  
+          <li id = 'guess-2' class = 'storeboxes'></li>  
+          <li id = 'guess-3' class = 'storeboxes'></li>  
+          <li id = 'guess-4' class = 'storeboxes'></li>  
+          <li id = 'guess-5' class = 'storeboxes'></li>  
+        </ul>
+      </div>
+        
+        <script src='guessing-game.js'></script>
+    <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
+  </div>   
+  </body>
+
+</html>
