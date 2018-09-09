@@ -15,7 +15,7 @@ function generateWinningNumber(){
 };
 
 
-//shuffles the array in place (w/o cloning).Don't really understand the fisher yates code
+//shuffles numbers in an array
 function shuffle (arr) {
     let arrLength = arr.length;
     let randomIdx;
@@ -51,13 +51,13 @@ class Game {
         if (this.playersGuess < this.winningNumber) return 'guess higher!';
         else if (this.playersGuess > this.winningNumber) return 'guess lower!';
         else if (this.playersGuess === this.winningNumber){
-            document.querySelector('body').style.backgroundImage = imagesObj.sunshine;
+            document.querySelector('body').style.backgroundImage = imagesObj.windCloud;
             document.querySelector('body').style.backgroundPosition = 'right'
-            document.getElementById('guess-1').style.backgroundImage = imagesObj.sunshine;
-            document.getElementById('guess-2').style.backgroundImage = imagesObj.sunshine;
-            document.getElementById('guess-3').style.backgroundImage = imagesObj.sunshine;
-            document.getElementById('guess-4').style.backgroundImage = imagesObj.sunshine;
-            document.getElementById('guess-5').style.backgroundImage = imagesObj.sunshine;
+            document.getElementById('guess-1').style.backgroundImage = imagesObj.windCloud;
+            document.getElementById('guess-2').style.backgroundImage = imagesObj.windCloud;
+            document.getElementById('guess-3').style.backgroundImage = imagesObj.windCloud;
+            document.getElementById('guess-4').style.backgroundImage = imagesObj.windCloud;
+            document.getElementById('guess-5').style.backgroundImage = imagesObj.windCloud;
 
 
             return 'thanks for bringing in sunshine!';
@@ -84,7 +84,7 @@ class Game {
             document.getElementById('submit').style.backgroundColor = 'lightgrey'
             document.getElementById('hint').disabled = true
             document.getElementById('hint').style.backgroundColor = 'lightgrey'
-            return `You Win! ${this.winningNumber} is the right number`
+            return `You Win! ${this.winningNumber} yields warm weather`
         } 
         else if (this.pastGuesses.includes(this.playersGuess)) return 'You have already guessed that number.'
         else  {
