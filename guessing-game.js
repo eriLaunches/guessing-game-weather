@@ -51,13 +51,13 @@ class Game {
         if (this.playersGuess < this.winningNumber) return 'guess higher!';
         else if (this.playersGuess > this.winningNumber) return 'guess lower!';
         else if (this.playersGuess === this.winningNumber){
-            document.querySelector('body').style.backgroundImage = imagesObj.windCloud;
+            document.querySelector('body').style.backgroundImage = imagesObj.sunshine;
             document.querySelector('body').style.backgroundPosition = 'right'
-            document.getElementById('guess-1').style.backgroundImage = imagesObj.windCloud;
-            document.getElementById('guess-2').style.backgroundImage = imagesObj.windCloud;
-            document.getElementById('guess-3').style.backgroundImage = imagesObj.windCloud;
-            document.getElementById('guess-4').style.backgroundImage = imagesObj.windCloud;
-            document.getElementById('guess-5').style.backgroundImage = imagesObj.windCloud;
+            document.getElementById('guess-1').style.backgroundImage = imagesObj.sunshine;
+            document.getElementById('guess-2').style.backgroundImage = imagesObj.sunshine;
+            document.getElementById('guess-3').style.backgroundImage = imagesObj.sunshine;
+            document.getElementById('guess-4').style.backgroundImage = imagesObj.sunshine;
+            document.getElementById('guess-5').style.backgroundImage = imagesObj.sunshine;
 
 
             return 'thanks for bringing in sunshine!';
